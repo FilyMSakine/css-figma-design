@@ -1,0 +1,66 @@
+:root {
+    --main-background: #CBE1F1;
+    --article-background-color: #FFFFFF;
+    --icon-background-color: #5DBC3C;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-background);
+    font-family: 'Nunito', sans-serif;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 11px 25px 11px 11px;
+    background-color: var(--article-background-color);
+    width: 324px;
+    height: auto;
+    border-radius: 37px;
+}
+
+.profil {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    width: auto;
+    height: 52px;
+}
+
+.profil-image {
+    width: 52px;
+    height: 52px;
+}
+
+.profil-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.profil p {
+    width: auto;
+    font-weight: bold;
+    font-size: 20px;
+    align-self: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: end;
+    background-color: var(--icon-background-color);
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
