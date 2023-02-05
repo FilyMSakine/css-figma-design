@@ -1,0 +1,83 @@
+:root {
+    --main-background-color: #E9EDF1;
+    --navbar-background-color: #DBE1E8;
+    --navbar-title-color: #0460BC;
+    --navbar-button-background-color-1: #C3CCD7;
+    --navbar-button-background-color-2: #B5C0CE;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: var(--navbar-background-color);
+    padding: 2.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.logo {
+    color: var(--navbar-title-color);
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 4.3em;
+}
+
+ul a li {
+    font-size: 1.8rem;
+    color: black;
+}
+
+ul a li.active {
+    font-weight: bold;
+}
+
+ul a li:hover {
+    color: var(--navbar-title-color);
+}
+
+a.cart {
+    background-color: var(--navbar-button-background-color-1);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: black;
+    font-size: 1.8rem;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+
+a.cart:hover {
+    background-color: var(--navbar-button-background-color-2);
+}
